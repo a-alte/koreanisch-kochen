@@ -4,15 +4,13 @@
  * Description: Renders the recipe overview page.
  */
 
-import { RecipeList } from "@/components/RecipeList";
 import { twc } from "@/data/tailwind-presets";
 
-export default function RecipeOverviewPage() {
+export default function IngridientsOverviewPage() {
   return (
     <main>
       <div className={twc("container")}>
-        <h1 className={twc("h1")}>Rezepte</h1>
-        <RecipeList />
+        <h1 className={twc("h1")}>Zutaten</h1>
       </div>
     </main>
   );

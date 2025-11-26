@@ -37,7 +37,6 @@ export default function RootLayout({
           style={{
             padding: "1rem",
             borderBottom: "1px solid #ccc",
-            marginBottom: "2rem",
           }}
         >
           <nav
@@ -49,6 +48,7 @@ export default function RootLayout({
           >
             <Link href="/">Startseite</Link>
             <Link href="/rezepte">Rezepte</Link>
+            <Link href="/zutaten">Zutaten</Link>
           </nav>
         </header>
 
