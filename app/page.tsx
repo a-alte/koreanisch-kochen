@@ -1,5 +1,5 @@
 /**
- * Page: Fronpage (Startseite)
+ * Page: Frontpage
  * Route: /
  * Description: Renders the front page.
  */
