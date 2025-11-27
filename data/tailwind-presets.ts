@@ -22,14 +22,14 @@ export const TailwindPreset: TailwindPresetRegistry = {
 
   // Headings.
   "h1": "text-3xl font-bold mb-4",
-  "h2": "text-xl font-semibold mb-1",
+  "h2": "text-[1.3rem] font-semibold mb-1",
 
-  "p": "text-sm text-gray-600 mb-2",
+  "p": "mb-2",
 
   // Grid & Layout.
-  "container": "w-full max-w-[1400px] mx-auto px-10",
+  "container": "w-full max-w-[95rem] mx-auto px-10",
 
-  "card": "group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer",
+  "card": "group rounded overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer bg-[#1A3C34]",
   
   "button": "px-8 py-3 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors",
 };

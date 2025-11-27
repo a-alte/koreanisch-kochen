@@ -1,15 +1,28 @@
-// data/recipes.ts
+/**
+ * File: Recipes
+ * Location: /data/recipes.ts
+ */
 
-import { Url } from "next/dist/shared/lib/router/router";
+export type RecipeCategoryId =
+  | "Hauptgericht"
+  | "Snack"
+  | "Suppe"
+  | "Banchan"
+  | "Dessert";
+
+export type RecipeDifficulty = 
+  | "leicht" 
+  | "mittel" 
+  | "schwer";
 
 export type Recipe = {
   id: number;
   slug: string;
   title: string;
   description?: string;
-  image?: url;
-  category?: string;
-  difficulty?: string;
+  image?: string;
+  category?: RecipeCategoryId;
+  difficulty?: RecipeDifficulty;
   durationMinutes?: number;
   content?: string;
   ingredients?: string[];
@@ -116,7 +129,7 @@ export const recipes: Recipe[] = [
     slug: "kimchi-jjigae",
     title: "Kimchi Jjigae",
     description: "Herzhaft scharfer Eintopf mit gereiftem Kimchi.",
-    category: "Eintopf",
+    category: "Hauptgericht",
     difficulty: "mittel",
     durationMinutes: 40,
     content:
@@ -148,7 +161,7 @@ export const recipes: Recipe[] = [
     slug: "bibimbap",
     title: "Bibimbap",
     description: "Reis mit Gemüse, Ei und Gochujang.",
-    category: "Reisgericht",
+    category: "Hauptgericht",
     difficulty: "leicht",
     durationMinutes: 30,
     content:

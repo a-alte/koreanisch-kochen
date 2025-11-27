@@ -14,29 +14,35 @@ import { twc } from "@/data/tailwind-presets";
 export default function Home() {
   return (
     <main>
-      <div className="py-20 bg-red-800 text-center">
+      <section className="">
         <div className={twc("container")}>
-          <h1 className="text-3xl font-bold text-white mb-4">Koreanisch kochen in Deutschland</h1>
-          <p className="text-white">
-            Einfache koreanische Rezepte mit Zutaten, die du in deutschen Supermärkten bekommst.
-          </p>
-        </div>
-      </div>
-      <div className={twc("container")}>
-        <div className="py-10">
-          <div className="mb-10">
-            <h2 className={twc("h2")}>Featured Recipes</h2>
-            <p className="text-gray-600">
-              Handpicked collection of our most popular Korean dishes
+          <div className="px-20 py-40 text-center max-w-240 mx-auto">
+            <h1 className="text-[90px] leading-[1.1] mb-4">Leckere <i className="text-[#e94222]">koreanische Rezepte</i> mit einfachen Zutaten</h1>
+            <p className="">
+              Einfache koreanische Rezepte mit Zutaten, die du in deutschen Supermärkten bekommst.
             </p>
           </div>
-
-          <RecipeList />
-
-          <div className="text-center mt-12">
-            <Link className={twc("button")} href={`/rezepte/`}>
-              Alle Rezepte ansehen
-            </Link>
+        </div>
+      </section>
+      <div className={twc("container")}>
+        <div className="py-10">
+          <div className="grid grid-cols-12 mb-12">
+            <div className="col-span-8">
+              <h2 className={twc("h2")}>Featured Recipes</h2>
+              <p className="">
+                Handpicked collection of our most popular Korean dishes
+              </p>
+            </div>
+            <div className="col-span-4 text-end">
+              <Link className={twc("button")} href={`/rezepte/`}>
+                Alle Rezepte ansehen
+              </Link>
+            </div>
+            <div className="col-span-12">
+          
+            <RecipeList />
+          
+            </div>
           </div>
 
         </div>
