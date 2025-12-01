@@ -1,11 +1,6 @@
 /**
  * File: Tailwind preset registry
  * Location: /data/tailwind-presets.ts
- * Description:
- *   Centralized collection of Tailwind CSS class presets used throughout
- *   the project. Provides a consistent naming system to avoid duplicated
- *   class strings and keeps layout/styling definitions maintainable.
- *   Includes a helper function (`twc`) for resolving preset keys.
  */
 
 /**
@@ -20,18 +15,19 @@ export type TailwindPresetRegistry = Record<string, string>;
  */
 export const TailwindPreset: TailwindPresetRegistry = {
 
-  // Headings.
-  "h1": "text-3xl font-bold mb-4",
-  "h2": "text-[1.3rem] font-semibold mb-1",
-
-  "p": "mb-2",
+  // Typo.
+  "h1":   "text-3xl font-bold mb-4",
+  "h2":   "text-[1.3rem] font-semibold mb-1",
+  "p":    "mb-2",
 
   // Grid & Layout.
-  "container": "w-full max-w-[95rem] mx-auto px-10",
+  "container":  "w-full max-w-[95rem] mx-auto px-10",
 
-  "card": "group rounded overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer bg-[#1A3C34]",
+  // Cards.
+  "card":  "group rounded overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer bg-[#1A3C34]",
   
-  "button": "px-8 py-3 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors",
+  // Buttons.
+  "button":   "px-8 py-3 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors",
 };
 
 /**
